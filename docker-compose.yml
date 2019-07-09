@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db:
+    image: mdillon/postgis
+    restart: always
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d/
+  web:
+    build: .
+    command: npm start
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    volumes:
+      - .:/usr/src/app

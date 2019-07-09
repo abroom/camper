@@ -1,0 +1,43 @@
+{
+  "name": "camper",
+  "version": "1.0.0",
+  "description": "RESTful endpoints for Camper.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon lib/server.js --exec babel-node",
+    "build": "babel lib -d dist",
+    "serve": "node dist/server.js",
+    "test": "mocha test --recursive --require @babel/register -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abroom/camper.git"
+  },
+  "author": "Alexander Do McIntosh Broom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abroom/camper/issues"
+  },
+  "homepage": "https://github.com/abroom/camper#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "http-status-codes": "^1.3.2",
+    "pg": "^7.11.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.18.11"
+  }
+}

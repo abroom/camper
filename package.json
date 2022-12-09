@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/abroom/camper#readme",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "http-status-codes": "^1.3.2",
     "pg": "^7.11.0"
   },
